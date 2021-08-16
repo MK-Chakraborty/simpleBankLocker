@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple Bank Site</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 my-5">
+            <h1 class="fs-1 fw-bold lh-lg text-warning text-center">Welcome!</h1>
+            <h1 class="fs-1 fw-bold text-warning text-center pb-3">To Access Your Account Please Log In.</h1>
+            <h1 class="fs-2 fw-bold text-danger text-center pb-3" id="errorMsg"></h1>
+            <div class="p-5 border border-warning border-5 formBorder">
+                <div class="mb-3">
+                    <label class="form-label inputLebel fs-2 fw-bold lh-lg text-warning">Email
+                        address</label>
+                    <input type="email" class="form-control py-2 fs-4 fw-bold rounded-pill" placeholder="Your Email"
+                        id="emailField" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label inputLebel fs-2 fw-bold lh-lg text-warning">Password</label>
+                    <input type="password" class="form-control py-2 fs-4 fw-bold rounded-pill"
+                        placeholder="Your Password" id="passwordField">
+                </div>
+                <div class="d-flex">
+                    <button type="submit" id="loginBtn"
+                        class="btn btn-lg btn-warning mx-auto mt-5 mb-3 py-3 px-5 fs-3 fw-bold rounded-pill">Log
+                        In</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

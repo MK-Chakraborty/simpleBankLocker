@@ -1,0 +1,27 @@
+body {
+    background: #1f2937;
+}
+
+.logInBtn {
+    color: #1f2937 !important;
+}
+
+.formBorder {
+    border-radius: 20px !important;
+}
+
+.bgColor {
+    background: #1f2937;
+}
+
+.bgColorWD {
+    background: #f87171;
+}
+
+.WDbtnText {
+    color: #f87171;
+}
+
+.bgColorBL {
+    background: #6ee7b7;
+}

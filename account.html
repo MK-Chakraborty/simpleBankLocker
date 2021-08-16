@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Client Account</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 my-5">
+            <h1 class="fs-1 fw-bold lh-lg text-warning text-center">Welcome to Your Locker! </h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="row my-5">
+                <h2 class="fs-2 fw-bold lh-lg text-warning text-center">Your Account Status</h2>
+                <div class="col-12 col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-0 my-3">
+                    <div class="p-5 bg-warning formBorder">
+                        <h3 class="fs-3 fw-bold lh-lg text-black-50 text-center">Deposit</h3>
+                        <h2 class="fs-2 fw-bold lh-lg logInBtn text-center">$<span id="depositTotal">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-0 my-3">
+                    <div class="p-5 bgColorWD formBorder">
+                        <h3 class="fs-3 fw-bold lh-lg text-black-50 text-center">Withdraw</h3>
+                        <h2 class="fs-2 fw-bold lh-lg logInBtn text-center">$<span id="withdrawTotal">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-0 my-3">
+                    <div class="p-5 bgColorBL formBorder">
+                        <h3 class="fs-3 fw-bold lh-lg text-black-50 text-center">Balance</h3>
+                        <h2 class="fs-2 fw-bold lh-lg logInBtn text-center">$<span id="balanceTotal">1500</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-2">
+            <div class="row my-5">
+                <h2 class="fs-2 fw-bold lh-lg text-warning text-center">Operations</h2>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 my-3">
+                    <div class="p-5 bg-warning formBorder">
+                        <h3 class="fs-3 fw-bold lh-lg text-black-50 text-center pb-3">Deposit Here</h3>
+                        <input type="number" class="form-control py-2 fs-4 rounded-pill" placeholder="Deposit Amount"
+                            id="depositField" aria-describedby="emailHelp">
+                        <div class="d-flex">
+                            <button type="submit" id="depositBtn"
+                                class="btn btn-lg bgColor mx-auto mt-5 mb-3 py-3 px-5 fs-3 fw-bold text-warning rounded-pill">Deposit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 my-3">
+                    <div class="p-5 bgColorWD formBorder">
+                        <h3 class="fs-3 fw-bold lh-lg text-black-50 text-center pb-3">Withdraw Here</h3>
+                        <input type="number" class="form-control py-2 fs-4 rounded-pill" placeholder="Withdraw Amount"
+                            id="withdrawField" aria-describedby="emailHelp">
+                        <div class="d-flex">
+                            <button type="submit" id="withdrawBtn"
+                                class="btn btn-lg bgColor mx-auto mt-5 mb-3 py-3 px-5 fs-3 fw-bold WDbtnText rounded-pill">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="js/account.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
